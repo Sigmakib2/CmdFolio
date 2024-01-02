@@ -19,10 +19,10 @@ function handleInput(event) {
                     showOutput('<div class="about">Hello, I am <b>Sakib Mahmud</b>, founder of Pathgriho Network. I am from Dhaka, Bangladesh. Currently, I am studying computer science and engineering at NU Bangladesh.</div>');
                     break;
                 case 'contact':
-                    showOutput('Contact me at: <br> Facebook: [Link] <br> Twitter: [Link] <br> Portfolio: [Link]');
+                    showOutput('Contact me at: <hr><br> Facebook: <a href="https://www.facebook.com/sakib.mahmud.9022">[Link]</a> <br> Twitter: <a href="https://twitter.com/sigmakib">[Link]</a> <br> GitHub: <a href="https://github.com/Sigmakib2">[Link]</a> <br> Discord: <a href="https://discord.gg/nA29nxnSHT">[Link]</a>');
                     break;
                 case 'help':
-                    showOutput('Available commands: <br> <div class="command">- about [Know about sigmakib] <br> - contact [Contact Sigmakib] <br> - help <br> - clear <br> - whoami [Who are you?] <br> - gui <br> - themes [List of theme] <br> - time <br> - github-repo [clone this proect]</div>');
+                    showOutput('Available commands: <br> <div class="command">- about [Know about sigmakib] <br> - contact [Contact Sigmakib] <br> - help <br> - clear <br> - whoami [Who are you?] <br> - gui [Use the graphical interface] <br> - themes [List of theme] <br> - time <br> - github-repo [clone this proect]</div><br> Use <span class="command2">Up Arrow</span> to go back to previous command, Use <span class="command2"><b>Tab</b></span> to autocomplete command.');
                     break;
                 case 'clear':
                     clearOutput();
@@ -89,9 +89,9 @@ async function getIPAddress() {
         const response = await fetch('https://api.ipify.org?format=json');
         const data = await response.json();
         const ipAddress = data.ip;
-        showOutput(`Your IP address is: ${ipAddress}`);
+        showOutput(`You are the current user, here is your IP: ${ipAddress}`);
     } catch (error) {
-        showOutput('Error fetching IP address');
+        showOutput('Sorry we donot know you! Wow an anonymous visitor!');
     }
 }
 
@@ -116,7 +116,7 @@ function navigateCommandHistory(direction) {
 }
 
 function showThemes() {
-    showOutput('Available themes: <br> - light <br> - dark <br> - ubuntu <br> - powershell');
+    showOutput('Available themes: <br> - light <br> - dark <br> - ubuntu <br> - powershell <br> <p>Use: theme set [theme name] to select theme<br> Ex: theme set ubuntu</p>');
 }
 
 function setTheme(themeName) {
@@ -149,5 +149,7 @@ function showTime() {
 }
 
 function openGitHubRepo() {
-    window.open('https://github.com/Sigmakib2/SigmakibCmd', '_blank');
+    window.open('https://github.com/Sigmakib2/CmdFolio', '_blank');
 }
+
+setInterval(function(){ window.scrollBy(0,1000); }, 1000)
