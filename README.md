@@ -1,4 +1,4 @@
-# SigmakibCmd
+# CmdFolio
 Transform your portfolio website into an interactive command-line experience with the Web Terminal Portfolio. Showcase your skills, projects, and bio in a unique, terminal-style interface.
 
 ## Web Terminal Portfolio
@@ -17,7 +17,7 @@ Customize themes, execute commands, and engage visitors with a dynamic and memor
 
 Follow these steps to set up your Web Terminal Portfolio:
 
-1. Clone the repository: `git clone https://github.com/Sigmakib2/SigmakibCmd.git`
+1. Clone the repository: `git clone https://github.com/Sigmakib2/CmdFolio.git`
 2. Open `index.html` in a web browser to view your portfolio.
 
 ### Usage

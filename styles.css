@@ -1,0 +1,164 @@
+body {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#terminal {
+    width: 80%;
+    max-width: 600px;
+    height: 400px;
+    overflow: auto;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #000000;
+}
+
+pre {
+    background: -webkit-linear-gradient(#70ff45, #001aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#output {
+    margin-bottom: 12px;
+    margin-top: 5px;
+}
+
+label {
+    color: rgb(0, 255, 242);
+    font-weight: 700;
+
+}
+
+input {
+    width: auto;
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    outline: none;
+    caret-color: rgb(53, 255, 12);
+}
+
+.about {
+    border-style: ridge;
+    border-color: rgb(153, 255, 0);
+    border-width: thin;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+/* Additional themes */
+body.theme-light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.theme-dark {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.theme-ubuntu {
+    background-color: #f0f0f0;
+    color: #333333;
+}
+
+body.theme-powershell {
+    background-color: #012456;
+    color: #ffffff;
+}
+
+.command {
+    color: rgb(153, 255, 0);
+    animation: Color 4s linear infinite;
+}
+
+.command2 {
+    font-family: Oswald;
+    animation: Color 4s linear infinite;
+    -webkit-animation: Color 4s ease-in-out infinite;
+}
+
+@keyframes Color {
+    0% {
+        color: #A0D468;
+    }
+
+    20% {
+        color: #4FC1E9;
+    }
+
+    40% {
+        color: #FFCE54;
+    }
+
+    60% {
+        color: #FC6E51;
+    }
+
+    80% {
+        color: #ED5565;
+    }
+
+    100% {
+        color: #AC92EC;
+    }
+}
+
+@-moz-keyframes Color {
+    0% {
+        color: #A0D468;
+    }
+
+    20% {
+        color: #4FC1E9;
+    }
+
+    40% {
+        color: #FFCE54;
+    }
+
+    60% {
+        color: #FC6E51;
+    }
+
+    80% {
+        color: #ED5565;
+    }
+
+    100% {
+        color: #AC92EC;
+    }
+}
+
+@-webkit-keyframes Color {
+    0% {
+        color: #A0D468;
+    }
+
+    20% {
+        color: #4FC1E9;
+    }
+
+    40% {
+        color: #FFCE54;
+    }
+
+    60% {
+        color: #FC6E51;
+    }
+
+    80% {
+        color: #ED5565;
+    }
+
+    100% {
+        color: #AC92EC;
+    }
+}
