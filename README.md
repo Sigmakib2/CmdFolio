@@ -1,6 +1,8 @@
 # CmdFolio
 Transform your portfolio website into an interactive command-line experience with the Web Terminal Portfolio. Showcase your skills, projects, and bio in a unique, terminal-style interface.
 
+![CmdFolio](/favicon/ss.png)  
+
 ## Web Terminal Portfolio
 
 Customize themes, execute commands, and engage visitors with a dynamic and memorable user experience. Perfect for developers, designers, and creatives looking to stand out in the digital realm.
