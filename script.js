@@ -22,7 +22,7 @@ function handleInput(event) {
                     showOutput('Contact me at: <hr><br> Facebook: <a href="https://www.facebook.com/sakib.mahmud.9022">[Link]</a> <br> Twitter: <a href="https://twitter.com/sigmakib">[Link]</a> <br> GitHub: <a href="https://github.com/Sigmakib2">[Link]</a> <br> Discord: <a href="https://discord.gg/nA29nxnSHT">[Link]</a>');
                     break;
                 case 'help':
-                    showOutput('Available commands: <br> <div class="command">- about [Know about sigmakib] <br> - contact [Contact Sigmakib] <br> - help <br> - clear <br> - whoami [Who are you?] <br> - gui [Use the graphical interface] <br> - themes [List of theme] <br> - time <br> - github-repo [clone this proect]</div><br> Use <span class="command2">Up Arrow</span> to go back to previous command, Use <span class="command2"><b>Tab</b></span> to autocomplete command.');
+                    showOutput('Available commands: <br> <div class="command">- about [Know about sigmakib] <br> - contact [Contact Sigmakib] <br> - help <br> - clear <br> - whoami [Who are you?] <br> - gui [Use the graphical interface] <br> - themes [List of theme] <br> - time <br> - github-repo [clone this project]</div><br> Use <span class="command2">Up Arrow</span> to go back to previous command, Use <span class="command2"><b>Tab</b></span> to autocomplete command.');
                     break;
                 case 'clear':
                     clearOutput();
